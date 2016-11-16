@@ -1,9 +1,7 @@
 #!/bin/bash
 # This is some secure program that uses security.
 
-read PNAME
-
-PID="ps -ef | grep $PNAME | grep -v grep | awk '{print \$2}'"
+PID="ps -ef | grep mchoice-smsc | grep -v grep | awk '{print \$2}'"
 FILE=/tmp/test.txt
 
 eval $PID > $FILE
